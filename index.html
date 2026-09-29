@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Iana Maningas | Accounting Student</title>
+    <title>Iana Maningas | Accounting Portfolio</title>
 
     <meta
         name="description"
@@ -58,7 +58,7 @@
 
         .section-description {
             color: #666;
-            max-width: 700px;
+            max-width: 750px;
             margin-bottom: 45px;
         }
 
@@ -140,8 +140,8 @@
             margin: auto;
 
             display: grid;
-            grid-template-columns: 1.3fr 0.7fr;
-            gap: 60px;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 70px;
             align-items: center;
         }
 
@@ -207,37 +207,31 @@
             color: #b5121b;
         }
 
-        .hero-card {
-            background: white;
-            padding: 35px;
-            border-radius: 15px;
-            border-top: 5px solid #b5121b;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+
+        /* =========================================
+           HEADSHOT
+        ========================================= */
+
+        .headshot-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .hero-card h3 {
-            margin-bottom: 15px;
-            font-size: 22px;
+        .headshot {
+            width: 340px;
+            height: 340px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            border: 6px solid white;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
         }
 
-        .hero-stat {
-            padding: 14px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        .hero-stat:last-child {
-            border-bottom: none;
-        }
-
-        .hero-stat strong {
-            display: block;
-            color: #b5121b;
-            font-size: 20px;
-        }
-
-        .hero-stat span {
-            color: #666;
-            font-size: 14px;
+        .headshot:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 22px 50px rgba(0, 0, 0, 0.18);
         }
 
 
@@ -334,7 +328,7 @@
 
         .skill-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
         }
 
         .skill-card h3 {
@@ -371,7 +365,7 @@
 
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
         .project-header {
@@ -564,8 +558,14 @@
                 padding-top: 120px;
             }
 
-            .hero-card {
-                max-width: 500px;
+            .headshot-container {
+                order: -1;
+                margin-bottom: 20px;
+            }
+
+            .headshot {
+                width: 260px;
+                height: 260px;
             }
 
             .about-grid {
@@ -610,29 +610,17 @@
 
         <ul class="nav-links">
 
-            <li>
-                <a href="#about">About</a>
-            </li>
+            <li><a href="#about">About</a></li>
 
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
+            <li><a href="#skills">Skills</a></li>
 
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
+            <li><a href="#projects">Projects</a></li>
 
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
+            <li><a href="#experience">Experience</a></li>
 
-            <li>
-                <a href="#education">Education</a>
-            </li>
+            <li><a href="#education">Education</a></li>
 
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#contact">Contact</a></li>
 
         </ul>
 
@@ -650,6 +638,8 @@
 
     <div class="hero-container">
 
+
+        <!-- LEFT SIDE -->
 
         <div>
 
@@ -694,63 +684,15 @@
         </div>
 
 
+        <!-- RIGHT SIDE: HEADSHOT -->
 
-        <div class="hero-card">
+        <div class="headshot-container">
 
-            <h3>
-                At a Glance
-            </h3>
-
-            <div class="hero-stat">
-
-                <strong>
-                    3.95
-                </strong>
-
-                <span>
-                    Cumulative GPA
-                </span>
-
-            </div>
-
-
-            <div class="hero-stat">
-
-                <strong>
-                    Accounting
-                </strong>
-
-                <span>
-                    B.S. Candidate
-                </span>
-
-            </div>
-
-
-            <div class="hero-stat">
-
-                <strong>
-                    May 2029
-                </strong>
-
-                <span>
-                    Expected Graduation
-                </span>
-
-            </div>
-
-
-            <div class="hero-stat">
-
-                <strong>
-                    Audit
-                </strong>
-
-                <span>
-                    Professional Interest
-                </span>
-
-            </div>
+            <img
+                src="headshot.png"
+                alt="Professional headshot of Iana Maningas"
+                class="headshot"
+            >
 
         </div>
 
@@ -823,29 +765,21 @@
             <div class="about-text">
 
                 <p>
-
                     I am currently a sophomore in the Rutgers Honors College,
                     pursuing a Bachelor of Science in Accounting.
-
                 </p>
 
-
                 <p>
-
                     My academic interests include financial reporting,
                     financial analysis, and understanding how accounting
                     supports business decision-making.
-
                 </p>
 
-
                 <p>
-
                     Through academics, professional development, leadership,
                     and work experience, I am continuing to develop the
                     communication, analytical, and teamwork skills needed
                     for a career in accounting.
-
                 </p>
 
             </div>
@@ -861,9 +795,7 @@
 
                 <div>
 
-                    <strong>
-                        3.95 GPA
-                    </strong>
+                    <strong>3.95 GPA</strong>
 
                     <br>
 
@@ -874,9 +806,7 @@
 
                 <div>
 
-                    <strong>
-                        B.S. Accounting
-                    </strong>
+                    <strong>B.S. Accounting</strong>
 
                     <br>
 
@@ -887,9 +817,7 @@
 
                 <div>
 
-                    <strong>
-                        Honors College
-                    </strong>
+                    <strong>Honors College</strong>
 
                     <br>
 
@@ -900,9 +828,7 @@
 
                 <div>
 
-                    <strong>
-                        Career Interest
-                    </strong>
+                    <strong>Career Interest</strong>
 
                     <br>
 
@@ -961,10 +887,8 @@
                 </h3>
 
                 <p>
-
                     Analyzing information, identifying problems,
                     developing solutions, and forming recommendations.
-
                 </p>
 
             </div>
@@ -978,11 +902,9 @@
                 </h3>
 
                 <p>
-
                     Presentations, professional networking,
                     customer service, academic writing, and
                     interpersonal communication.
-
                 </p>
 
             </div>
@@ -996,11 +918,9 @@
                 </h3>
 
                 <p>
-
                     Experience coordinating activities,
                     managing responsibilities, and working
                     with others toward shared goals.
-
                 </p>
 
             </div>
@@ -1014,11 +934,9 @@
                 </h3>
 
                 <p>
-
                     Collaborating with classmates, coworkers,
                     volunteers, and professional teams in
                     different environments.
-
                 </p>
 
             </div>
@@ -1032,11 +950,9 @@
                 </h3>
 
                 <p>
-
                     Managing responsibilities, statistics,
                     budgets, events, and tasks while maintaining
                     attention to detail.
-
                 </p>
 
             </div>
@@ -1050,11 +966,9 @@
                 </h3>
 
                 <p>
-
                     Researching topics, evaluating sources,
                     developing evidence-based arguments, and
                     communicating ideas through written work.
-
                 </p>
 
             </div>
@@ -1091,7 +1005,8 @@
         <p class="section-description">
 
             Selected work demonstrating my analytical thinking,
-            research, communication, and collaboration skills.
+            research, communication, problem-solving, and
+            collaboration skills.
 
         </p>
 
@@ -1100,7 +1015,7 @@
         <div class="projects-grid">
 
 
-            <!-- PROJECT 1 -->
+            <!-- PROJECT 1: KPMG -->
 
             <div class="project-card">
 
@@ -1122,10 +1037,16 @@
 
                     <p>
 
-                        Collaborated with a small team to analyze a
-                        business case, develop solutions, and present
-                        recommendations. Our team won the workshop's
-                        presentation competition.
+                        Participated in KPMG's Ace the Case workshop,
+                        where I collaborated with a small team to analyze
+                        a business case, identify key issues, develop
+                        solutions, and present our recommendations. The
+                        experience strengthened my analytical thinking,
+                        problem-solving, teamwork, and presentation skills
+                        while giving me experience approaching a business
+                        problem in a professional setting. Our team
+                        ultimately won the workshop's presentation
+                        competition.
 
                     </p>
 
@@ -1146,7 +1067,7 @@
 
 
 
-            <!-- PROJECT 2 -->
+            <!-- PROJECT 2: RESEARCH PAPER -->
 
             <div class="project-card">
 
@@ -1168,12 +1089,16 @@
 
                     <p>
 
-                        Conducted academic research examining the
-                        relationship between clothing and perceptions
-                        of male masculinity. Synthesized sources and
-                        developed an evidence-based argument while
-                        strengthening my research, analytical, and
-                        written communication skills.
+                        Completed an academic research paper examining
+                        the relationship between clothing and perceptions
+                        of male masculinity. The project involved
+                        researching the topic, evaluating and synthesizing
+                        sources, and using evidence to develop and support
+                        a clear argument. Through the research and writing
+                        process, I strengthened my critical thinking,
+                        source evaluation, organization, and written
+                        communication skills while exploring how clothing
+                        can influence social perceptions of masculinity.
 
                     </p>
 
@@ -1223,9 +1148,9 @@
 
         <p class="section-description">
 
-            Work and professional development experiences
-            that have helped me strengthen my communication,
-            teamwork, and professional skills.
+            Work, leadership, and professional development experiences
+            that have helped me strengthen my communication, teamwork,
+            organization, and professional skills.
 
         </p>
 
@@ -1249,10 +1174,10 @@
 
             <p>
 
-                Prepare smoothies and food orders efficiently
-                while maintaining accuracy, quality, and consistency.
-                Provide customer service by taking orders and assisting
-                customers in a fast-paced environment.
+                Prepare smoothies and food orders efficiently while
+                maintaining accuracy, quality, and consistency. Provide
+                customer service by taking orders and assisting customers
+                in a fast-paced environment.
 
             </p>
 
@@ -1278,11 +1203,10 @@
 
             <p>
 
-                Learned about BDO's culture and the daily
-                responsibilities of tax and audit accountants
-                through an NYC office tour. Networked with
-                senior associates and principals to learn more
-                about career paths and professional development.
+                Learned about BDO's culture and the daily responsibilities
+                of tax and audit accountants through an NYC office tour.
+                Networked with senior associates and principals to learn
+                more about career paths and professional development.
 
             </p>
 
@@ -1309,9 +1233,9 @@
             <p>
 
                 Developed skills in case analysis, problem-solving,
-                collaboration, and presenting recommendations.
-                Worked with a small group that won the workshop's
-                presentation competition.
+                collaboration, and presenting recommendations. Worked
+                with a small group that won the workshop's presentation
+                competition.
 
             </p>
 
@@ -1337,10 +1261,10 @@
 
             <p>
 
-                Recorded game statistics for more than 40 athletes
-                across volleyball, basketball, and softball and
-                coordinated equipment and audience seating for
-                more than 50 games annually.
+                Recorded game statistics for more than 40 athletes across
+                volleyball, basketball, and softball and coordinated
+                equipment and audience seating for more than 50 games
+                annually.
 
             </p>
 
@@ -1366,9 +1290,9 @@
 
             <p>
 
-                Managed a $200 annual budget and worked with the
-                club's executive board and moderator to organize
-                and expand club meetings.
+                Managed a $200 annual budget and worked with the club's
+                executive board and moderator to organize and expand
+                club meetings.
 
             </p>
 
@@ -1394,8 +1318,8 @@
 
             <p>
 
-                Worked with other volunteers to cook and plate
-                meals for more than 100 clients during shifts.
+                Worked with other volunteers to cook and plate meals
+                for more than 100 clients during shifts.
 
             </p>
 
@@ -1494,9 +1418,8 @@
 
         <p>
 
-            I am interested in continuing to develop my
-            accounting experience and learning more about
-            opportunities in audit.
+            I am interested in continuing to develop my accounting
+            experience and learning more about opportunities in audit.
 
         </p>
 
